@@ -68,7 +68,7 @@ wget https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/win
 # "terminal.ansiYellow":"#5E81AC"
 
 # ...and mono patched nerd fonts, install in Windows:
-curl https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Bold/complete/Hack%20Bold%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf --output /mnt/c/
+curl https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Bold/complete/Hack%20Bold%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf -O
 
 # zsh
 sudo apt install zsh -y
