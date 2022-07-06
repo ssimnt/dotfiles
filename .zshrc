@@ -79,7 +79,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting)
 
-ZSH_TMUX_AUTOSTART=true
+# ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,6 +115,7 @@ export NVM_DIR="$HOME/.nvm"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ccat="highlight -l -O ansi --force --syntax=bash"
 alias -g G='| grep -i'
+alias serve="python3 -m http.server"
 
 source $HOME/.profile
 
