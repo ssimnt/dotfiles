@@ -14,4 +14,17 @@ curl https://raw.githubusercontent.com/ssimnt/dotfiles/main/.p10k.zsh --output .
 curl https://raw.githubusercontent.com/ssimnt/dotfiles/main/.zshrc --output .zshrc
 curl https://raw.githubusercontent.com/ssimnt/dotfiles/main/.tmux.conf --output .tmux.conf
 
+# Download aliases script into custom folder
+cd ~/.oh-my-zsh/custom/
+curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/aliases.zsh -o
+
+# Download other dot files
+cd ~
+curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.zshrc -o
+curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.p10k.zsh -o
+curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.tmux.conf -o
+
+# Reload
+source .zshrc
+
 # then prefix I to load tmux plugins
