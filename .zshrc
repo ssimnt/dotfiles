@@ -113,9 +113,7 @@ export NVM_DIR="$HOME/.nvm"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ccat="highlight -l -O ansi --force --syntax=bash"
-alias -g G='| grep -i'
-alias serve="python3 -m http.server"
+# alias ccat="highlight -l -O ansi --force --syntax=bash"
 
 source $HOME/.profile
 
