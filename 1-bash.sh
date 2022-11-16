@@ -13,6 +13,15 @@ git config --global user.name "Simon"
 # highlight for ccat
 sudo apt-get install highlight -y
 
+# trying out bat instead of the above
+sudo apt install bat
+
+# exa for file listings
+sudo apt install exa
+
+# nala
+sudo apt install nala
+
 # DuckDuckGo-er
 pip3 install ddgr
 
