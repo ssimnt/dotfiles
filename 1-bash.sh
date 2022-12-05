@@ -1,7 +1,7 @@
 sudo apt-get update -y && sudo apt-get upgrade -y
 
 # utils
-sudo apt-get install git curl wget unzip \
+sudo apt-get install git curl wget unzip jq \
  build-essential libssl-dev autoconf bison \
  libpq-dev libyaml-dev libreadline6-dev zlib1g-dev \
  libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev -y
