@@ -16,13 +16,13 @@ curl https://raw.githubusercontent.com/ssimnt/dotfiles/main/.tmux.conf --output 
 
 # Download aliases script into custom folder
 cd ~/.oh-my-zsh/custom/
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/aliases.zsh -o
+curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/aliases.zsh -O
 
 # Download other dot files
 cd ~
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.zshrc -o
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.p10k.zsh -o
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.tmux.conf -o
+curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.zshrc -O
+curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.p10k.zsh -O
+curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.tmux.conf -O
 
 # Reload
 source .zshrc
