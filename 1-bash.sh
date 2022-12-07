@@ -10,10 +10,7 @@ sudo apt-get install git curl wget unzip jq \
 git config --global user.email "my.name@email.com"
 git config --global user.name "Simon"
 
-# highlight for ccat
-sudo apt-get install highlight -y
-
-# trying out bat instead of the above
+# batcat to alias as cat
 sudo apt install bat
 
 # exa for file listings
@@ -24,6 +21,9 @@ sudo apt install nala
 
 # DuckDuckGo-er
 pip3 install ddgr
+
+# Taskwarrior
+sudo apt-get install taskwarrior
 
 # tmux
 sudo apt-get install tmux -y
