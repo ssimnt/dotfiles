@@ -16,6 +16,7 @@ export ZSH="/home/si/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
 eval `dircolors ~/.dircolors`
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
@@ -113,7 +114,6 @@ export NVM_DIR="$HOME/.nvm"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# alias ccat="highlight -l -O ansi --force --syntax=bash"
 
 source $HOME/.profile
 
