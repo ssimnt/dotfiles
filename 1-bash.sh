@@ -10,14 +10,9 @@ sudo apt-get install git curl wget unzip jq \
 git config --global user.email "my.name@email.com"
 git config --global user.name "Simon"
 
-# batcat to alias as cat
-sudo apt install bat
-
-# exa for file listings
-sudo apt install exa
-
-# nala
-sudo apt install nala
+# a few cmd replacements
+# batcat to alias as cat, exa for file listings, nala
+sudo apt install bat exa nala
 
 # DuckDuckGo-er
 pip3 install ddgr
@@ -31,11 +26,29 @@ sudo apt-get install tmux -y
 # tmux plugin manager (prefix i to install)
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# using dircolors.ansi-dark
-curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-dark --output ~/.dircolors
+# create dir for setup,repos, etc
+cd ~
+mkdir setup
+cd setup
 
-# iTerm2 colour scheme for WinTerm
+# get mono patched nerd fonts, install in Windows:
+curl https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Bold/complete/Hack%20Bold%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf -O
+
+# clone dracula & nord themes for dotfiles, winterm + zsh
+git clone https://github.com/dracula/dircolors.git
+git clone https://github.com/dracula/zsh.git
+git clone https://github.com/dracula/windows-terminal.git
+git clone https://github.com/arcticicestudio/nord-dircolors.git
+
+# symlink dircolors to Nord by default
+ln -s ~/setup/nord-dircolors/src/dir_colors ~/.dircolors
+
+# get Nord colour scheme for WinTerm, repo is huge...
 wget https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/windowsterminal/nord.json
+
+# ...and generic dark mode .dircolors as a backup
+curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-dark --output .dircolors_solarized
+
 #  create a new windows terminal profile similar to:
 #    [
 #        {
@@ -76,9 +89,6 @@ wget https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/win
 # "terminal.ansiWhite":"#E5E9F0",
 # "terminal.ansiYellow":"#5E81AC"
 
-# ...and mono patched nerd fonts, install in Windows:
-curl https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Bold/complete/Hack%20Bold%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf -O
-
 # zsh
 sudo apt install zsh -y
 chsh -s $(which zsh)
@@ -86,5 +96,4 @@ chsh -s $(which zsh)
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-# might need to "exec zsh" after omz setup?
 exec zsh
