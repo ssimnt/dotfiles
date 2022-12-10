@@ -9,22 +9,15 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 # rbenv
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | zsh
 
-# Copy over config files
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/main/.p10k.zsh --output .p10k.zsh
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/main/.zshrc --output .zshrc
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/main/.tmux.conf --output .tmux.conf
+# Create symlinks to config files
+ln -s .p10k.zsh ~/.p10k.zsh
+ln -s .tmux.conf ~/.tmux.conf
+ln -s .zshrc ~/.zshrc
 
-# Download aliases script into custom folder
-cd ~/.oh-my-zsh/custom/
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/aliases.zsh -O
-
-# Download other dot files
-cd ~
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.zshrc -O
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.p10k.zsh -O
-curl https://raw.githubusercontent.com/ssimnt/dotfiles/251f3cda7114926a54a5bb2fc0a5eaafa938e9e1/.tmux.conf -O
+# Link to aliases script in OMZ custom folder
+ln -s aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
 
 # Reload
 source .zshrc
 
-# then prefix I to load tmux plugins
+# then prefix I to load tmux plugins...
