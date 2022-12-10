@@ -10,12 +10,12 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | zsh
 
 # Create symlinks to config files
-ln -s .p10k.zsh ~/.p10k.zsh
-ln -s .tmux.conf ~/.tmux.conf
-ln -s .zshrc ~/.zshrc
+ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 # Link to aliases script in OMZ custom folder
-ln -s aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
+ln -s ~/dotfiles/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
 
 # Reload
 source .zshrc
