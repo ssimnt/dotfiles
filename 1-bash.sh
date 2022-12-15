@@ -40,8 +40,8 @@ git clone https://github.com/dracula/zsh.git
 git clone https://github.com/dracula/windows-terminal.git
 git clone https://github.com/arcticicestudio/nord-dircolors.git
 
-# symlink dircolors to Nord by default
-ln -s ~/setup/nord-dircolors/src/dir_colors ~/.dircolors
+# symlink dircolors to Dracula by default
+ln -s ~/setup/dircolors/.dircolors ~/.dircolors
 
 # get Nord colour scheme for WinTerm, repo is huge...
 wget https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/windowsterminal/nord.json
