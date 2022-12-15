@@ -1,5 +1,5 @@
 alias rcat=$(which cat)
-alias cat='batcat --theme=Nord --paging=never'
+alias cat='batcat --theme=Dracula --paging=never'
 alias -g G='| grep -i'
 alias serve='python3 -m http.server'
 alias lt='exa -TL2 --icons --group-directories-first'
